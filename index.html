@@ -147,6 +147,18 @@
     50%{opacity:0.25;}
   }
 
+  /* Profile Picture styling to integrate it */
+  .hero-pfp {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: block;
+    margin: 0;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
   h1.name{
     font-size:clamp(48px, 8vw, 76px);
     font-weight:900;
@@ -526,6 +538,8 @@
 
   <section class="hero wrap">
     <div class="eyebrow"><span class="dot"></span> backend engineer — ai memory &amp; distributed systems</div>
+    <!-- Profile picture inserted here -->
+    <img src="image_0.png" class="hero-pfp"  alt="Prateek Gupta - Cartoon Portrait">
     <h1 class="name">Prateek Gupta</h1>
     <p class="role-line">I build memory and speed into AI systems.</p>
     <p class="bio">Backend engineer working at the AI-infra layer — <strong>persistent memory for agents</strong>, <strong>low-latency LLM gateways</strong>, and the distributed systems underneath them. Currently interning at CodeMate.ai and building GoMemory and AI Gateway in the open.</p>
@@ -678,7 +692,7 @@
         <div class="write-card-sub mono">notes on ai-infra, memory systems &amp; distributed backends</div>
       </div>
       <span class="write-arrow">↗</span>
-    </a>
+    </div>
   </section>
 
   <section class="section wrap" id="contact" style="border-bottom:none;">
