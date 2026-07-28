@@ -548,7 +548,7 @@
     <div class="terminal mono" id="terminal" aria-label="Sample memory record, for illustration"></div>
 
     <div class="cta-row">
-      <a class="btn primary" href="https://drive.google.com/file/d/1BOSQ6sZUq8w_tAOoH5yDAF9Kaek6psSk/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="btn primary" href="https://drive.google.com/file/d/1qdNPvvL2PhYztDyOj5s2YAOp97SP02Wh/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
       <a class="btn" href="https://github.com/Prateek-Gupta001" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/prateek-gupta-7b59b0226?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://x.com/Prateek14163056" target="_blank" rel="noopener">X</a>
@@ -629,23 +629,6 @@
         </ul>
         <a class="btn" href="https://github.com/Prateek-Gupta001/AI_Gateway" target="_blank" rel="noopener">View source ↗</a>
       </div>
-    <div class="project">
-        <div class="project-top">
-          <div class="project-title">Agentic Workflow Engine</div>
-          <div class="project-role mono">dag-based workflow orchestrator</div>
-        </div>
-        <p class="project-desc">A backend engine that runs a customer-support triage workflow as a DAG — Postgres as the single source of truth for every node's state, crash-safe replay, idempotent retries, and a park-and-resume flow for the human-in-the-loop step.</p>
-        <div class="tag-row">
-          <span class="tag">Go</span><span class="tag">Postgres</span><span class="tag">REST API</span>
-        </div>
-        <ul class="bullets">
-          <li>Built a central executor that drives stateless nodes through a generic Execute interface, reading Postgres on every dispatch so a live run and a post-crash resume share the exact same code path.</li>
-          <li>Modeled execution as a fixed-point loop — read state, dispatch whatever's unblocked, repeat — so branching, skipped paths, and retries fall out of the state machine naturally instead of being special-cased.</li>
-          <li>Made human approval fully non-blocking: the node parks as awaiting_approval in Postgres and releases the goroutine, letting a run sit paused for days without holding any resources.</li>
-          <li>Derived idempotency from checking node_states before acting, so a retried or duplicate call is a no-op rather than a double-execution of an external system.</li>
-        </ul>
-        <a class="btn" href="https://github.com/Prateek-Gupta001/Agentic_Workflow_Engine" target="_blank" rel="noopener">View source ↗</a>
-      </div>
     </div>
   </section>
 
@@ -722,7 +705,7 @@
       <a class="btn" href="https://github.com/Prateek-Gupta001" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/prateek-gupta-7b59b0226?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://x.com/Prateek14163056" target="_blank" rel="noopener">X</a>
-      <a class="btn" href="https://drive.google.com/file/d/1BOSQ6sZUq8w_tAOoH5yDAF9Kaek6psSk/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="btn" href="https://drive.google.com/file/d/1qdNPvvL2PhYztDyOj5s2YAOp97SP02Wh/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
     </div>
   </section>
 
